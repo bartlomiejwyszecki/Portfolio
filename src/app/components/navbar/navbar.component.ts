@@ -11,6 +11,7 @@ import { ChangeDetectionStrategy, Component, Inject, HostListener } from '@angul
 export class NavbarComponent {
   check!: boolean;
   hamburger: boolean = true;
+  links: boolean = false;
 
   constructor(
     @Inject (DOCUMENT) private document: Document
