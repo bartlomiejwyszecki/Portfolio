@@ -1,0 +1,25 @@
+import { DOCUMENT } from '@angular/common';
+import { ChangeDetectionStrategy, Component, Inject, HostListener } from '@angular/core';
+
+@Component({
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
+
+})
+export class NavbarComponent {
+  check!: boolean;
+  hamburger: boolean = true;
+
+  constructor(
+    @Inject (DOCUMENT) private document: Document
+  ) { }
+
+  @HostListener("document:scroll", [])
+  onScroll() {
+    const offset = this.document.documentElement.scrollTop ||
+      this.document.body.scrollTop || 0;
+    offset > 100 ? this.check = true : this.check = false;
+  }
+}
