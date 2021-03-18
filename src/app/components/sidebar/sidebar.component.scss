@@ -23,11 +23,10 @@
     background: #fafafa;
     z-index: 9;
     transition: 1s;
+    font-size: 0.9em;
     .panel {
         color: #212121;
         .photo {
-            width: 150px;
-            height: 150px;
             border-radius: 50%;
             background: #212121;
             background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('./../../../assets/photo.png');
@@ -37,27 +36,36 @@
             background-size: cover;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 20px;
         }
         .description {
-            padding: 20px;
             text-align: center;
             h3 {
                 font-weight: 800;
-                font-size: 1.5em;
+                font-size: 1.3em;
             }
             h4 {
                 text-transform: uppercase;
-                font-size: 1.1em;
+                font-size: 1em;
                 font-weight: 300;
                 margin-top: -5px;
             }
         }
+        .profile {
+            border-top: 1px dashed #bdbdbd;
+            h3 {
+                padding: 0px 0 0px 15px;
+                margin-bottom: 5px;
+                font-size: 1.2em;
+                font-weight: 600;
+            }
+            p {
+                padding: 5px 15px 5px 25px;
+            }
+        }
         .details {
             border-top: 1px dashed #bdbdbd;
-            padding-top: 15px;
             h3 {
-                padding: 5px 0 0px 15px;
+                padding: 0px 0 5px 15px;
                 margin-bottom: 5px;
                 font-size: 1.2em;
                 font-weight: 600;
@@ -66,12 +74,20 @@
                 list-style: none;
                 li {
                     margin-left: -15px;
-                    padding: 5px 0 10px 10px;
+                    padding: 5px 5px 10px 5px;
                     i {
                         font-size: 1.1em;
                     }
                     span {
                         margin-left: 10px;
+                    }
+                    a {
+                        font-weight: 600;
+                    }
+                    a:hover {
+                        color: #5c0032;
+                        cursor: pointer;
+                        transition: 0.3s;
                     }
                 }
             }
@@ -88,7 +104,7 @@
     background: #fafafa;
     z-index: 9;
     position: fixed;
-    top: 25%;
+    top: 37%;
     border-radius: 0 15px 15px 0;
     font-size: 0.8em;
     .toggle {
@@ -115,6 +131,18 @@
 @media only screen and (min-width: 480px) {
     .sidebar {
         width: 360px;
+        .photo {
+            width: 150px;
+            height: 150px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        .description {
+            margin-bottom: 25px;
+        }
+        .details, .profile {
+            padding-top: 25px;
+        }
     }
     .button {
         margin-left: 360px;
@@ -124,9 +152,28 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        overflow: scroll;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     .sidebar {
         width: 300px;
+        font-size: 0.8em;
+        .photo {
+            width: 120px;
+            height: 120px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .description {
+            margin-bottom: 15px;
+        }
+        .details, .profile {
+            padding-top: 15px;
+        }
     }
     .button {
         margin-left: 300px;
@@ -139,6 +186,10 @@
 @media only screen and (min-width: 360px) and (max-width: 480px) {
     .sidebar {
         width: 300px;
+        .photo {
+            width: 100px;
+            height: 100px;
+        }
     }
     .button {
         margin-left: 300px;

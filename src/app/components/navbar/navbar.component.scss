@@ -32,11 +32,14 @@ nav {
                 color: #fafafa;
             }
         }
-        .nav-item:hover, .active {
-            font-weight: 700;
+        .active {
             border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+            font-weight: 700;
+        }
+        .nav-item:hover {
+            font-weight: 700;
             a {
-                border-bottom: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.75);
                 transition: 0s;
                 transition-delay: 0s;
             }
@@ -48,6 +51,9 @@ nav {
     nav {
         ul {
             height: 50px;
+        }
+        li {
+            margin-left: -5px;
         }
         .hamburger {
             display: none;
@@ -66,7 +72,7 @@ nav {
                 }
                 .active {
                     border-bottom: 4px solid #5c0032;
-                    font-weight: 800;
+                    font-weight: 700;
                 }
             }
         }
@@ -89,10 +95,10 @@ nav {
         ul {
             transition: 1s;
             position: relative;
-            left: 0;
+            left: -15px;
             text-align: right;
             top: 30px;
-            width: calc(100vw);
+            width: calc(100vw + 15px);
             .nav-item {
                 background: #fafafa;
                 margin-top: -1px;

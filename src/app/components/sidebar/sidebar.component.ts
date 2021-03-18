@@ -25,6 +25,6 @@ export class PhonePipe {
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent {
-  toggle: boolean = false;
+  toggle: boolean = true;
   myPhone: string = '508499908';
 }
