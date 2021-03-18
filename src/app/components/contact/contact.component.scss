@@ -1,6 +1,6 @@
 .container {
     color: #fafafa;
-    margin-top: 150px;
+    margin-top: 125px;
     .header {
         text-align: center;
         h1 {
@@ -11,19 +11,59 @@
             font-weight: 900;
             color: rgba(255, 255, 255, .05);
             position: absolute;
-            margin-left: -175px;
+            margin-top: -90px;
             text-transform: uppercase;
             z-index: -2;
-            font-size: 5em;
         }
     }
     .illustration {
         position: relative;
         text-align: right;
+        margin-top: -180px;
         top: 130px;
         svg {
             width: 270px;
             height: 390px;
+        }
+    }
+    .content {
+        margin-top: 30px;
+        form {
+            margin-top: 50px;
+            font-family: muli, sans-serif;
+            width: 100%;
+            .btn {
+                margin-top: 15px;
+                background: rgba(255, 255, 255, .2);
+                border: 1px solid rgba(255, 255, 255, .5);
+                color: #fafafa;
+                font-weight: 500;
+            }
+            .btn:hover, .btn:active, .btn:focus {
+                background: #fafafa;
+                font-weight: bold;
+                color: #5c0032;
+            }
+        }
+        .links {
+            border-radius: 15px;
+            h2 {
+                font-size: 1.2em;
+                font-weight: 600;
+                margin-top: 50px;
+            }
+            ul {
+                list-style: none;
+                margin-top: 10px;
+                li {
+                    display: block;
+                    padding: 10px 0 5px 0px;
+                    font-weight: 300;
+                }
+                span {
+                    margin-left: 10px;
+                }
+            }
         }
     }
 }
@@ -43,5 +83,22 @@ footer {
     }
 }
 
+@media only screen and (min-width: 768px) {
+    .links {
+        width: 50%;
+    }
+    .isBackground {
+        font-size: 5em;
+        margin-left: -140px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
+    .links {
+        width: 100%;
+    }
+    .isBackground {
+        font-size: 3em;
+        margin-left: -160px;
+    }
 }
