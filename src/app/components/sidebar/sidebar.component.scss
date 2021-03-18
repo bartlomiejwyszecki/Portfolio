@@ -84,11 +84,13 @@
                     }
                     a {
                         font-weight: 600;
+                        text-decoration: none;
+                        color: #212121;
                     }
                     a:hover {
                         color: #5c0032;
                         cursor: pointer;
-                        transition: 0.3s;
+                        transition: 0.1s;
                     }
                 }
             }

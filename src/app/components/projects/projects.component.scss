@@ -1,0 +1,157 @@
+.container {
+    color: #fafafa;
+    margin-top: 150px;
+    .header {
+        text-align: center;
+        h1 {
+            font-size: clamp(1.8em, 3vw, 2.4em);
+            font-weight: 900;
+        }
+        .isBackground {
+            font-weight: 900;
+            color: rgba(255, 255, 255, .05);
+            position: absolute;
+            margin-left: -175px;
+            text-transform: uppercase;
+            z-index: -2;
+        }
+    }
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 75px;
+        .project {
+            border: 1px solid rgba(255, 255, 255, .5);
+            border-radius: 15px;
+            a {
+                text-decoration: none;
+                color: #fafafa;
+            }
+            a:hover {
+                cursor: pointer;
+                font-weight: 500;
+            }
+            .img {
+                .icons {
+                    display: none;
+                    flex-wrap: wrap;
+                    position: relative;
+                    float: right;
+                    bottom: 160px;
+                    right: 20px;
+                    text-align: center;
+                    line-height: 40px;
+                    .live, .github {
+                        width: 40px;
+                        height: 40px;
+                        background: rgba(255, 255, 255, .5);
+                        color: #616161;
+                        margin-left: 20px;
+                        border-radius: 5px;
+                        font-size: 1.1em;
+                    }
+                    .live:hover, .github:hover {
+                        cursor: pointer;
+                        background: rgba(255, 255, 255, .8);
+                        color: #212121;
+                    }
+                }
+            }
+            .img:hover {
+                img {
+                    filter: brightness(50%);
+                    transition: 0.75s;
+                }
+                .icons {
+                    display: flex;
+                    a {
+                        color: #5c0032;
+                    }
+                }
+            }
+            .description {
+                h4 {
+                    text-transform: uppercase;
+                    font-size: 1.2em;
+                    font-weight: 400;
+                    padding: 15px 5px 10px 0px;
+                }
+                h5 {
+                    font-size: 0.9em;
+                    font-weight: 300;
+                    padding-bottom: 5px;
+                }
+            }
+            h2 {
+                font-size: 2.5em;
+                position: relative;
+                text-align: center;
+                top: 40%;
+                font-weight: 300;
+            }
+            h2:hover {
+                a {
+                    color: #5c0032;
+                    font-weight: 400;
+                }
+            }
+        }
+        .project:hover {
+            background: rgba(255, 255, 255, .9);
+            color: #5c0032;
+            transition: 1.5s;
+            .img {
+                img {
+                    box-shadow: 1px 1px 6px grey;
+                }
+            }
+            .description {
+                a {
+                    color: #5c0032; 
+                }
+            }
+            h2, a {
+                color: #5c0032;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .project {
+        margin: 25px 15px 25px 15px;
+        padding: 30px;
+        height: 350px;
+        width: 390px;
+        .img {
+            img {
+                width: 330px;
+                height: 180px;
+            }
+        }
+    }
+    .isBackground {
+        margin-top: -100px;
+        font-size: clamp(3em, 6vw, 8em);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .project {
+        margin: 15px 10px 25px 10px;
+        padding: 15px;
+        height: 320px;
+        width: 260px;
+        .img {
+            img {
+                width: 230px;
+                height: 150px;
+            }
+        }
+    }
+    .isBackground {
+        margin-top: -50px;
+        font-size: 3em;
+    }
+}

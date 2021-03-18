@@ -7,6 +7,8 @@ import { PhonePipe, SidebarComponent } from './components/sidebar/sidebar.compon
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutComponent } from './components/about/about.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ContactComponent } from './components/contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,9 @@ import { SkillsComponent } from './components/skills/skills.component';
     SidebarComponent,
     AboutComponent,
     PhonePipe,
-    SkillsComponent
+    SkillsComponent,
+    ProjectsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
