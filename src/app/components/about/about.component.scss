@@ -1,0 +1,117 @@
+.container {
+    color: #fafafa;
+    font-family: muli, sans-serif;
+    width: 100%;
+    .header {
+        h1 {
+            font-size: clamp(1.8em, 3vw, 2.4em);
+            font-weight: 900;
+        }
+        .isBackground {
+            font-weight: 900;
+            color: rgba(255, 255, 255, .05);
+            position: absolute;
+            text-transform: uppercase;
+            z-index: -2;
+        }
+    }
+    section {
+        position: relative;
+        z-index: -1;
+        .illustration {
+            position: relative;
+            overflow: visible;
+            svg {
+                width: 85%;
+                overflow: visible;
+                
+            }
+            #Warstwa_3 {
+                animation: mymove2 8s infinite;
+            }
+        
+            #Warstwa_2 {
+                animation: mymove 8s infinite;
+            }
+        }
+        .description {
+            line-height: 1.6;
+            padding: 25px;
+            font-weight: 300;
+            font-size: 1em;
+            p {
+                padding-top: 20px;
+            }
+            span {
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .container {
+        margin-top: 100px;
+    }
+    .illustration {
+        margin-top: -150px;
+        width: 50%;
+        float: right;
+        svg {
+            float: right;
+        }
+    }
+    h1 {
+        padding: 125px 0 0px 50px;
+    }
+    .isBackground {
+        font-size: clamp(4em, 10vw, 8em);
+        left: 0px;
+        top: 60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin-top: 0px;
+    }
+    .illustration {
+        text-align: center;
+        width: 100%;
+    }
+    h1 {
+        padding: 75px 0 0 30px;
+    }
+    .isBackground {
+        font-size: clamp(4em, 10vw, 8em);
+        left: -25px;
+        top: 25px;
+    }
+    section {
+        width: 110%;
+        margin-left: -5%;
+        font-size: 0.9em;
+        p {
+            padding-left: 5px;
+        }
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .isBackground {
+        font-size: 2.5em;
+    }
+}
+
+@keyframes mymove {
+    0% { transform: skew(0, 0) }
+    33% { transform: skew(-1deg, -1deg) }
+    66% { transform: skew(1deg, 2deg) }
+    100% { transform: skew(0, 0) }
+  }
+
+@keyframes mymove2 {
+    0% { transform: scale(1) translate(0px, 0px) }
+    50% { transform: scale(1.075) translate(-10px, -10px) }
+    100% { transform: scale(1) translate(0px, 0px) }
+}
