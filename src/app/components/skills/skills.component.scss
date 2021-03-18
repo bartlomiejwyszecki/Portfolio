@@ -1,0 +1,96 @@
+.container {
+    color: #fafafa;
+    .header {
+        text-align: center;
+        margin-bottom: -300px;
+        h1 {
+            font-size: clamp(1.8em, 3vw, 2.4em);
+            font-weight: 900;
+        }
+        .isBackground {
+            font-weight: 900;
+            color: rgba(255, 255, 255, .05);
+            position: relative;
+            text-transform: uppercase;
+            z-index: -2;
+        }
+    }
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .icon {
+            border: 1px solid rgba(255, 255, 255, .5);
+            border-radius: 15px;
+            text-align: center;
+            line-height: 130px;
+            color: #eeeeee;
+            width: 150px;
+            height: 180px;
+            font-size: 100px;
+            margin: 25px;
+            transition: 0.5s;
+            .iconify {
+                font-size: 100px;
+                margin-bottom: 25px;
+                z-index: 0;
+                position: relative;
+            }
+            h5 {
+                margin-top: 10px;
+                font-size: 15px;
+            }
+        }
+        #ts {
+            h5 {
+                margin-top: 1px;
+            }
+        }
+        h4 {
+            width: 100%;
+            text-align: center;
+            font-size: clamp(1.8em, 3vw, 2.4em);
+            font-weight: 900;
+            padding: 50px;
+        }
+        .icon:hover {
+            background: rgba(255, 255, 255, .75);
+            color: rgb(4, 1, 45);
+            cursor: pointer;
+            transition: 0.5s;
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .container {
+        margin-top: 150px;
+        h1 {
+            padding: 125px 0 0px 50px;
+        }
+        .isBackground {
+            font-size: clamp(4em, 10vw, 8em);
+            left: 0px;
+            top: -300px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin-top: 100px;
+        h1 {
+            padding: 75px 0 0 30px;
+        }
+        .isBackground {
+            font-size: clamp(4em, 10vw, 8em);
+            top: -175px;
+        }
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .isBackground {
+        font-size: 2.5em;
+    }
+}
