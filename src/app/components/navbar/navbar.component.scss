@@ -8,7 +8,6 @@ nav {
     position: fixed;
     width: 100%;
     height: 50px;
-    z-index: 1;
         .hamburger {
             z-index: 1;
             width: 40px;
@@ -50,11 +49,12 @@ nav {
                 color: #fafafa;
             }
         }
-        .active {
+        .active, .nav-item a:hover {
             border-bottom: 1px solid rgba(255, 255, 255, 0.75);
             font-weight: 700;
         }
         .nav-item:hover {
+            cursor: pointer;
             font-weight: 700;
             a {
                 border-bottom: 1px solid rgba(255, 255, 255, 0.75);
@@ -88,7 +88,7 @@ nav {
                     color: #5c0032;
                     font-weight: 500;
                 }
-                .active {
+                .active, .nav-item a:hover {
                     border-bottom: 4px solid #5c0032;
                     font-weight: 700;
                 }

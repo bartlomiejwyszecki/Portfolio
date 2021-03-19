@@ -1,6 +1,5 @@
 .container {
     color: #fafafa;
-    margin-top: 150px;
     .header {
         text-align: center;
         h1 {
@@ -149,6 +148,10 @@
                 height: 150px;
             }
         }
+        font-size: 0.95em;
+    }
+    .project:hover {
+        font-size: 0.95em;
     }
     .isBackground {
         margin-top: -50px;

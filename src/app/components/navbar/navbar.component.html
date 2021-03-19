@@ -2,14 +2,8 @@
   <div class="container-fluid">
     <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
       <ul class="navbar-nav" [ngClass]="{'turned': hamburger}">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">About me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">My skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">My projects</a>
+        <li class="nav-item" *ngFor="let c of components">
+          <a class="nav-link" aria-current="page" (click)="goToLink(c)" [ngClass]="{'active': isCurrent(c)}">{{ c }}</a>
         </li>
       </ul>
     </div>
