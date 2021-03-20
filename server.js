@@ -9,5 +9,5 @@ const router = jsonServer.router("data.json");
 app.use(jsonServer.bodyParser);
 app.use("/api", (req, resp, next) => router(req, resp, next));
 
-const port = process.env.PORT || 4001;
+const port = process.argv[3] || 4001;
 app.listen(port, () => console.log(`Serwer nasłuchuje na porcie 4001`));
