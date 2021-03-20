@@ -23,7 +23,6 @@
         .project {
             border: 1px solid rgba(255, 255, 255, .5);
             border-radius: 15px;
-            transition: 0.75s;
             a {
                 text-decoration: none;
                 color: #fafafa;
@@ -33,9 +32,6 @@
                 font-weight: 500;
             }
             .img {
-                img {
-                    transition: 0.5s;
-                }
                 .icons {
                     display: none;
                     flex-wrap: wrap;
@@ -54,14 +50,14 @@
                         border-radius: 5px;
                         font-size: 1.1em;
                     }
-                    .live:hover, .github:hover {
+                    .live:hover, .live:active, .live:focus, .github:hover, .github:active, .github:focus {
                         cursor: pointer;
                         background: rgba(255, 255, 255, .8);
                         color: #212121;
                     }
                 }
             }
-            .img:hover {
+            .img:hover, .img:active, .img:focus {
                 img {
                     filter: brightness(50%);
                     transition: 0.75s;
@@ -90,7 +86,7 @@
                 font-size: 1.8em;
                 position: relative;
                 text-align: center;
-                top: 43%;
+                top: 40%;
                 font-weight: 300;
             }
             h2:hover {
@@ -100,7 +96,7 @@
                 }
             }
         }
-        .project:hover {
+        .project:hover, .project:focus, .project:active {
             background: rgba(255, 255, 255, .9);
             color: #5c0032;
             transition: 1.5s;
