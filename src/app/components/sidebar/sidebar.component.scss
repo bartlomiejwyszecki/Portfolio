@@ -6,7 +6,7 @@
     height: 100%;
     background: rgba(20, 0, 11, .8);
     transition: 1s;
-    z-index: 1;
+    z-index: 2;
 }
 .bg {
     transition: 1s;
@@ -107,9 +107,10 @@
     background: #fafafa;
     z-index: 9;
     position: fixed;
-    top: 40%;
+    top: 35%;
     border-radius: 0 15px 15px 0;
     font-size: 0.8em;
+    cursor: pointer;
     .toggle {
         transform: rotate(-90deg);
         position: relative;
@@ -117,7 +118,6 @@
         a {
             display: inline;
             font-weight: 500;
-            cursor: pointer;
             i {
                 display: inline;
                 margin-left: 10px;
@@ -136,14 +136,14 @@
         .photo {
             width: 150px;
             height: 150px;
-            margin-top: 25px;
-            margin-bottom: 25px;
+            margin-top: 35px;
+            margin-bottom: 35px;
         }
         .description {
-            margin-bottom: 25px;
+            margin-bottom: 35px;
         }
         .details, .profile {
-            padding-top: 25px;
+            padding-top: 35px;
         }
     }
     .button {
@@ -167,14 +167,14 @@
         .photo {
             width: 120px;
             height: 120px;
-            margin-top: 15px;
-            margin-bottom: 15px;
+            margin-top: 25px;
+            margin-bottom: 25px;
         }
         .description {
-            margin-bottom: 15px;
+            margin-bottom: 25px;
         }
         .details, .profile {
-            padding-top: 15px;
+            padding-top: 25px;
         }
     }
     .button {

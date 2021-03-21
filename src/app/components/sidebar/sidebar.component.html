@@ -10,19 +10,19 @@
         </div>
         <div class="profile">
             <h3>Profile</h3>
-            <p>I am programming passionate looking for my first job as a Front-end Developer. My strong suits are Angular and TypeScript, but I'm also open to work with JavaScript, React or other front-end technologies.</p>
+            <p>I am programming enthusiast in search of my first job as Front-end Developer. My strong suits are Angular and TypeScript, but I'm also open to work with JavaScript, React and other front-end technologies.</p>
         </div>
         <div class="details">
             <h3>Details</h3>
             <ul>
-                <li><a><i class="far fa-envelope"></i><span>bartlomiej.wyszecki2@gmail.com</span></a></li>
+                <li><a><i class="far fa-envelope"></i><span>{{ mail }}</span></a></li>
                 <li><a href="https://github.com/bartlomiejwyszecki"><i class="fab fa-github"></i><span>github.com/bartlomiejwyszecki</span></a></li>
                 <li><a><i class="fas fa-mobile-alt"></i><span>{{ myPhone | phone }}</span></a></li>
             </ul>
         </div>
     </div>
-    <div class="button">
-        <div class="toggle" (click)="toggle = !toggle">
+    <div class="button" (click)="toggle = !toggle">
+        <div class="toggle">
             <a><span>PROFILE</span> <i class="fas fa-bars"></i></a>
         </div>
     </div>

@@ -27,4 +27,5 @@ export class PhonePipe {
 export class SidebarComponent {
   toggle: boolean = true;
   myPhone: string = '508499908';
+  mail: string = 'bartlomiej.wyszecki2@gmail.com'
 }

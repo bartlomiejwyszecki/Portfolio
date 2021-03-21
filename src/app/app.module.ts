@@ -9,6 +9,7 @@ import { AboutComponent } from './components/about/about.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { AnimationComponent } from './components/animation/animation.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { ContactComponent } from './components/contact/contact.component';
     PhonePipe,
     SkillsComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    AnimationComponent
   ],
   imports: [
     BrowserModule,

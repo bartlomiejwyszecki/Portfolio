@@ -36,9 +36,8 @@
                     display: none;
                     flex-wrap: wrap;
                     position: relative;
+                    z-index: 1;
                     float: right;
-                    bottom: 160px;
-                    right: 20px;
                     text-align: center;
                     line-height: 40px;
                     .live, .github {
@@ -50,20 +49,21 @@
                         border-radius: 5px;
                         font-size: 1.1em;
                     }
-                    .live:hover, .live:active, .live:focus, .github:hover, .github:active, .github:focus {
+                    .live:hover, .github:hover {
                         cursor: pointer;
                         background: rgba(255, 255, 255, .8);
                         color: #212121;
                     }
                 }
             }
-            .img:hover, .img:active, .img:focus {
+            .img:hover {
                 img {
                     filter: brightness(50%);
                     transition: 0.75s;
                 }
                 .icons {
                     display: flex;
+                    height: 15px;
                     a {
                         color: #5c0032;
                     }
@@ -74,7 +74,7 @@
                     text-transform: uppercase;
                     font-size: 1.2em;
                     font-weight: 400;
-                    padding: 15px 5px 10px 0px;
+                    padding: 15px 0px 10px 0px;
                 }
                 h5 {
                     font-size: 0.9em;
@@ -96,7 +96,7 @@
                 }
             }
         }
-        .project:hover, .project:focus, .project:active {
+        .project:hover {
             background: rgba(255, 255, 255, .9);
             color: #5c0032;
             transition: 1.5s;
@@ -124,6 +124,10 @@
         height: 350px;
         width: 390px;
         .img {
+            .icons {
+                bottom: 160px;
+                right: 20px;
+            }
             img {
                 width: 330px;
                 height: 180px;
@@ -137,12 +141,19 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .content {
+        margin-top: 25px;
+    }
     .project {
         margin: 15px 10px 25px 10px;
         padding: 15px;
         height: 320px;
         width: 260px;
         .img {
+            .icons {
+                bottom: 135px;
+                right: 20px;
+            }
             img {
                 width: 230px;
                 height: 150px;

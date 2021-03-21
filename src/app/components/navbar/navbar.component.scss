@@ -112,7 +112,7 @@ nav {
             }
         }
         ul {
-            transition: 1s;
+            transition: 1.25s;
             position: relative;
             left: -15px;
             text-align: right;
@@ -122,21 +122,20 @@ nav {
                 background: #fafafa;
                 margin-top: -1px;
                 font-size: 0.9em;
-                position: relative;
                 a {
                     color: #5c0032;
                     padding-right: 30px;
                     margin-top: 20px;
                     padding-top: 20px;
                     padding-bottom: 20px;
-                    transition: 1.5s;
+                    transition: 0.5s;
                     transition-delay: 0.5s;
                 }
             }
         }
         .turned {
-            transform: translateY(-350px);
-            transition: 1s;
+            margin-top: -380px;
+            transition: 1.2s;
             .nav-item {
                 a {
                     color: #fafafa;
