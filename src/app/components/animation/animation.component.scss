@@ -9,32 +9,32 @@
     background: rgba(250, 250, 250);
     z-index: 100;
     animation: hideDiv 10s 1;
-    animation-delay: 6.5s;
+    animation-delay: 4.8s;
     .dots {
         z-index: 101;
         text-align: center;
         line-height: 100vh;
         .dot {
-            margin: 20px;
+            margin: 15px;
             display: inline-block;
             .hideOne {
                 animation: hide 10s 1;
-                animation-delay: 5.4s;
+                animation-delay: 3.6s;
             }
             .hideTwo {
                 animation: hide 10s 1;
-                animation-delay: 6s;
+                animation-delay: 4.2s;
             }
             .hideThree {
                 animation: hide 10s 1;
-                animation-delay: 6.6s;
+                animation-delay: 4.8s;
             }
             .one, .two, .three {
-                width: 25px;
-                height: 25px;
+                width: 20px;
+                height: 20px;
                 border-radius: 50%;
                 background: black;
-                animation: jump 1.8s 3;
+                animation: jump 1.8s 2;
                 background: #04012d;
             }
             .two {
@@ -53,19 +53,19 @@
                 border-radius: 50%;
                 transform: scale(0.5, 0.1);
                 filter: blur(10px);
-                animation: shadow 1.8s 3;
+                animation: shadow 1.8s 2;
             }
             .hideShadowOne {
                 animation: hideShadow 10s 1;
-                animation-delay: 5.4s;
+                animation-delay: 3.5s;
             }
             .hideShadowTwo {
                 animation: hideShadow 10s 1;
-                animation-delay: 6s;
+                animation-delay: 4s;
             }
             .hideShadowThree {
                 animation: hideShadow 10s 1;
-                animation-delay: 6.6s;
+                animation-delay: 4.5s;
             }
             #two {
                 animation-delay: 0.6s;
@@ -86,7 +86,7 @@
 
 @keyframes shadow {
     0% { transform: scale(0.5, 0.1) }
-    50% { transform: scale(0.8, 0.5) }
+    50% { transform: scale(0.8, 0.4) translateY(8px) }
     100% { transform: scale(0.5, 0.1) }
 }
 

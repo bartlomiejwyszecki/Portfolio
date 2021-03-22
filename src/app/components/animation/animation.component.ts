@@ -13,7 +13,7 @@ export class AnimationComponent implements OnInit {
   ngOnInit(): void {
     setTimeout(() => {
       this.check = false;
-    }, 8000);
+    }, 6000);
   }
 
 }
