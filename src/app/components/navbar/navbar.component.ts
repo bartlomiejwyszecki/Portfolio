@@ -16,7 +16,7 @@ export class NavbarComponent {
 
   @Output() clickedLink = new EventEmitter<string>();
 
-  components: string[] = ['About me', 'My skills', 'My projects', 'Contact'];
+  components: string[] = ['Home', 'About me', 'My skills', 'My projects', 'Contact'];
 
   check!: boolean;
   hamburger: boolean = true;

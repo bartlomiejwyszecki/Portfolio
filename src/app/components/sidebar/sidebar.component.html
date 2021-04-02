@@ -9,6 +9,11 @@
             <h4>Front-end developer</h4>
         </div>
         <div class="profile">
+            <div class="button" (click)="toggle = !toggle">
+                <div class="toggle">
+                    <a><span>PROFILE</span> <i class="fas fa-bars"></i></a>
+                </div>
+            </div>
             <h3>Profile</h3>
             <p>I am programming enthusiast in search of my first job as Front-end Developer. My strong suits are Angular and TypeScript, but I'm also open to work with JavaScript, React and other front-end technologies.</p>
         </div>
@@ -19,11 +24,6 @@
                 <li><a href="https://github.com/bartlomiejwyszecki"><i class="fab fa-github"></i><span>github.com/bartlomiejwyszecki</span></a></li>
                 <li><a><i class="fas fa-mobile-alt"></i><span>{{ myPhone | phone }}</span></a></li>
             </ul>
-        </div>
-    </div>
-    <div class="button" (click)="toggle = !toggle">
-        <div class="toggle">
-            <a><span>PROFILE</span> <i class="fas fa-bars"></i></a>
         </div>
     </div>
 </div>

@@ -1,6 +1,6 @@
 import { Component, ElementRef, HostListener, QueryList, ViewChildren } from '@angular/core';
 
-const areas = '1,2,3,4';
+const areas = '1,2,3,4,5';
 
 @Component({
   selector: 'app-root',

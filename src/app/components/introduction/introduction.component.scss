@@ -5,11 +5,11 @@
     padding: 250px 0 250px 0;
     background-image: url('./../../../assets/introduction.png');
     background-size: cover;
-    font-size: 5em;
 }
 h1 {
     color: #1b1464;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: clamp(24px, 6vw, 72px);
     span {
         font-weight: 900;
         letter-spacing: 1px;
@@ -20,6 +20,7 @@ h2 {
     text-transform: uppercase;
     font-weight: 300;
     padding: 0px 0 100px 0px;
+    font-size: clamp(18px, 4vw, 36px);
 }
 .header {
     padding: 25px 0 0 50px;
