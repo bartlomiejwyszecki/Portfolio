@@ -1,18 +1,21 @@
+.bg {
+    position: relative;
+    z-index: 0;
+    padding: 250px 0 200px 0;
+    background: red;
+    background-image: url('./../../../assets/about.png');
+    background-size: cover;
+}
+
 .container {
     color: #fafafa;
     font-family: muli, sans-serif;
     width: 100%;
     .header {
         h1 {
+            padding-top: 25px;
             font-size: clamp(1.8em, 3vw, 2.4em);
             font-weight: 900;
-        }
-        .isBackground {
-            font-weight: 900;
-            color: rgba(255, 255, 255, .05);
-            position: absolute;
-            text-transform: uppercase;
-            z-index: -2;
         }
     }
     section {
@@ -58,14 +61,6 @@
             float: right;
         }
     }
-    h1 {
-        padding: 125px 0 0px 50px;
-    }
-    .isBackground {
-        font-size: clamp(4em, 10vw, 8em);
-        left: 0px;
-        margin-top: -270px;
-    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -73,26 +68,12 @@
         text-align: center;
         width: 100%;
     }
-    h1 {
-        padding: 75px 0 0 30px;
-    }
-    .isBackground {
-        font-size: clamp(4em, 10vw, 8em);
-        left: -25px;
-        margin-top: -150px;
-    }
     section {
         width: 100%;
         font-size: 0.9em;
         p {
             padding-left: 5px;
         }
-    }
-}
-
-@media only screen and (max-width: 430px) {
-    .isBackground {
-        font-size: 2.5em;
     }
 }
 

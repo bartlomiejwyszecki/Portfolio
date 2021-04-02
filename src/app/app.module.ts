@@ -10,6 +10,9 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { AnimationComponent } from './components/animation/animation.component';
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+import { IntroductionComponent } from './components/introduction/introduction.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,11 +23,13 @@ import { AnimationComponent } from './components/animation/animation.component';
     SkillsComponent,
     ProjectsComponent,
     ContactComponent,
-    AnimationComponent
+    AnimationComponent,
+    IntroductionComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    NgxUsefulSwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

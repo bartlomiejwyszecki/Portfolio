@@ -1,0 +1,26 @@
+.bg {
+    position: relative;
+    min-height: 100vh;
+    z-index: 0;
+    padding: 250px 0 250px 0;
+    background-image: url('./../../../assets/introduction.png');
+    background-size: cover;
+    font-size: 5em;
+}
+h1 {
+    color: #1b1464;
+    font-weight: 500;
+    span {
+        font-weight: 900;
+        letter-spacing: 1px;
+    }
+}
+h2 {
+    color: #bb004f;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 0px 0 100px 0px;
+}
+.header {
+    padding: 25px 0 0 50px;
+}
