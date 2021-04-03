@@ -92,7 +92,17 @@ nav {
                     color: #bb004f;
                     font-weight: 500;
                 }
-                .active, .nav-item a:hover {
+                .active {
+                    border-bottom: 4px solid #bb004f;
+                    font-weight: 700;
+                }
+            }
+            .nav-item:hover {
+                a {
+                    font-weight: 700;
+                    border-bottom: none;
+                }
+                .active {
                     border-bottom: 4px solid #bb004f;
                     font-weight: 700;
                 }
@@ -133,6 +143,18 @@ nav {
                     margin-top: 20px;
                     padding-top: 20px;
                     padding-bottom: 20px;
+                }
+                .active {
+                    border-bottom: none;
+                }
+            }
+            .nav-item:hover {
+                border-bottom: none;
+                a {
+                    border-bottom: none;
+                }
+                .active {
+                    border-bottom: none;
                 }
             }
         }

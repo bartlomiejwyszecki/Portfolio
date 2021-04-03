@@ -1,109 +1,74 @@
-.container {
-    color: #fafafa;
-    .header {
-        text-align: center;
+.bg {
+    position: relative;
+    z-index: 0;
+    padding: 200px 0 200px 0;
+    min-height: 100vh;
+    text-align: center;
+    background-image: url('./../../../assets/skills.jpg');
+    background-size: cover;
+    .container {
+        color: #fafafa;
         h1 {
-            font-size: clamp(1.8em, 3vw, 2.4em);
+            color: #1b1464;
             font-weight: 900;
+            font-size: clamp(30px, 5vw, 48px);
         }
-        .isBackground {
-            font-weight: 900;
-            color: rgba(255, 255, 255, .05);
-            position: absolute;
+        h2 {
+            color: #bb004f;
             text-transform: uppercase;
-            z-index: -2;
+            font-weight: 300;
+            padding: 125px 0 25px 0px;
+            font-size: clamp(18px, 4vw, 36px);
         }
-    }
-    .content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        .icon {
-            border: 1px solid rgba(255, 255, 255, .5);
-            border-radius: 15px;
-            text-align: center;
-            line-height: 130px;
-            color: #eeeeee;
-            width: 150px;
-            height: 180px;
-            font-size: 100px;
-            margin: 25px;
-            transition: 0.5s;
-            .iconify {
-                font-size: 85px;
-                margin-bottom: 25px;
-                z-index: -1;
-                position: relative;
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .icon {
+                border: 1px solid rgba(27, 20, 100, .5);
+                border-radius: 15px;
+                text-align: center;
+                line-height: 130px;
+                color: #1b1464;
+                width: 150px;
+                height: 180px;
+                font-size: 100px;
+                margin: 25px;
+                transition: 0.5s;
+                box-shadow: 3px 3px 10px -4px #757575;
+                .iconify {
+                    font-size: 85px;
+                    margin-bottom: 25px;
+                    z-index: -1;
+                    position: relative;
+                }
+                h5 {
+                    margin-top: 10px;
+                    font-size: 15px;
+                    color: #bb004f;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    transition: 0.2s;
+                }
             }
-            h5 {
-                margin-top: 10px;
-                font-size: 15px;
+            #ts {
+                h5 {
+                    margin-top: 1px;
+                }
             }
-        }
-        #ts {
-            h5 {
-                margin-top: 1px;
+            .icon:hover {
+                background: rgba(27, 20, 100, .15);
+                border: 1px solid rgba(27, 20, 100, .1);
+                color: rgb(4, 1, 45);
+                cursor: pointer;
+                transition: 0.5s;
+                .iconify {
+                    z-index: 0;
+                }
+                h5 {
+                    font-weight: 700;
+                }
             }
-        }
-        h4 {
-            width: 100%;
-            text-align: center;
-            font-size: clamp(1.8em, 3vw, 2.4em);
-            font-weight: 900;
-            padding: 50px;
-        }
-        .icon:hover {
-            background: rgba(255, 255, 255, .75);
-            color: rgb(4, 1, 45);
-            cursor: pointer;
-            transition: 0.5s;
-            .iconify {
-                z-index: 0;
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: 769px) {
-    .container {
-        h1 {
-            padding: 0px 0 0px 0px;
-        }
-        .isBackground {
-            font-size: clamp(4em, 10vw, 8em);
-            margin-top: -125px;
-        }
-        .header {
-            margin-bottom: 75px;
-        }
-    }
-}
-
-@media only screen and (max-width: 768px) and (min-width: 431px) {
-    .container {
-        h1 {
-            overflow: hidden;
-        }
-        .isBackground {
-            font-size: clamp(5em, 10vw, 7em);
-            margin-top: -125px;
-            margin-left: -100px;
-        }
-        .header {
-            margin-bottom: 50px;
-        }
-    }
-}
-
-@media only screen and (max-width: 430px) {
-    .container {
-        .header {
-            margin-bottom: 25px;
-        }
-        .isBackground {
-            font-size: 3em;
-            margin-top: -50px;
-            margin-left: -75px;
         }
     }
 }

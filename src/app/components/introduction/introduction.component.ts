@@ -11,6 +11,7 @@ export class IntroductionComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    //TEXT WRITER
     const texts = [
       "Front-end developer", "Programming enthusiast"
     ]
@@ -33,10 +34,10 @@ export class IntroductionComponent implements OnInit {
         count++;
         index = 0;
       }
-      timeout = setTimeout(type, 200);
+      timeout = setTimeout(type, 200); //ONE LETTER WRITING TIME
       if (letter.length === currentText.length) {
         clearTimeout(timeout);
-        setTimeout(type, 3000);
+        setTimeout(type, 3000); //DELAY AFTER TEXT IS COMPLETELY WRITTEN
       }
     };
     type();
