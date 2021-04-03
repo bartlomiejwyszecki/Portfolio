@@ -7,9 +7,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroductionComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
+    const texts = [
+      "Front-end developer", "Programming enthusiast"
+    ]
+    let count = 0;
+    let index = 0;
+    let currentText = '';
+    let letter = '';
+
+    let timeout;
+
+    let type = () => {
+      if (count === texts.length) {
+        count = 0;
+      }
+      currentText = texts[count];
+      letter = currentText.slice(0, ++index);
+
+      document.querySelector('.text')!.textContent = letter;
+      if (letter.length === currentText.length) {
+        count++;
+        index = 0;
+      }
+      timeout = setTimeout(type, 200);
+      if (letter.length === currentText.length) {
+        clearTimeout(timeout);
+        setTimeout(type, 3000);
+      }
+    };
+    type();
   }
 
 }

@@ -34,12 +34,16 @@ export class NavbarComponent {
   }
 
   isCurrent(name: string) {
-
-    return this.components[Number(this.current) - 1] === name ?
-     true : false;
+    if (this.components[Number(this.current)-1] === name ) {
+      console.log('Current in navbar: ' + this.current);
+      return true;
+    } else {
+      return false;
+    }
   }
 
   goToLink(value: string) {
     this.clickedLink.emit(value);
+    console.log(value);
   }
 }

@@ -21,6 +21,7 @@ export class AppComponent {
       component => this.isElementInViewPort(component.nativeElement));
 
       this.current = areas.split(',')[activeComponent];
+      //console.log('Current ' + this.current + ', Active component: ' + activeComponent);
   }
 
   isElementInViewPort(el: any) {
@@ -35,11 +36,12 @@ export class AppComponent {
 
   updateCurrentLink(currentLink: string) {
     this.link = currentLink;
-    const yOffset = -150; 
+    const yOffset = 50; 
     const element = document.getElementById(currentLink);
     const y = element!.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
     window.scrollTo({top: y, behavior: 'smooth'});
+    console.log('Current link in appcomponent: ' + currentLink);
   }
 
   scrollTo(el: HTMLElement) {

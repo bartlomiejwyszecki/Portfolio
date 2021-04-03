@@ -3,13 +3,15 @@
     min-height: 100vh;
     z-index: 0;
     padding: 250px 0 250px 0;
-    background-image: url('./../../../assets/introduction.png');
+    background-image: url('./../../../assets/introduction.jpg');
     background-size: cover;
 }
 h1 {
     color: #1b1464;
     font-weight: 400;
     font-size: clamp(24px, 6vw, 72px);
+    white-space: nowrap;
+    width: 5ch;
     span {
         font-weight: 900;
         letter-spacing: 1px;
@@ -24,4 +26,19 @@ h2 {
 }
 .header {
     padding: 25px 0 0 50px;
+}
+
+.text {
+    border-right: 1px solid #bb004f;
+    animation: typing 1s infinite;
+}
+
+.text::after {
+    border-right: 1px solid #bb004f;
+}
+
+@keyframes typing {
+    0% { border-right: 1px solid rgba(187, 0, 79, .0) }
+    50% { border-right: 1px solid rgba(187, 0, 79, 1) }
+    100% { border-right: 1px solid rgba(187, 0, 79, .0) }
 }
