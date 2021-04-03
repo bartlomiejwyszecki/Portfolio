@@ -1,39 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { SwiperOptions } from 'swiper'
 
+import { projects, Project } from './data/data';
+
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
+  PROJECTS: Project[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
+    this.PROJECTS = projects;
   }
-
-  Images: any = [
-    {
-      src: 'https://loremflickr.com/g/600/400/paris',
-      alt: 'Image 1',
-    }, {
-      src: 'https://loremflickr.com/600/400/brazil,rio',
-      alt: 'Image 2'
-    }, {
-      src: 'https://loremflickr.com/600/400/paris,girl/all',
-      alt: 'Image 3'
-    }, {
-      src: 'https://loremflickr.com/600/400/brazil,rio',
-      alt: 'Image 4'
-    }, {
-      src: 'https://loremflickr.com/600/400/paris,girl/all',
-      alt: 'Image 5'
-    }, {
-      src: 'https://loremflickr.com/600/400/brazil,rio',
-      alt: 'Image 6'
-    }    
-  ]
 
   config: SwiperOptions = {
     pagination: { 
@@ -52,9 +34,9 @@ export class ProjectsComponent implements OnInit {
     centeredSlides: true,
     slidesPerView: 'auto',
     coverflowEffect: {
-      rotate: 50,
+      rotate: 40,
       stretch: 0,
-      depth: 100,
+      depth: 90,
       modifier: 1,
       slideShadows: true
     }

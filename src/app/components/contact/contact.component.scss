@@ -1,18 +1,11 @@
 .container {
     color: #fafafa;
-    margin-top: 125px;
     .header {
         text-align: center;
         h1 {
-            font-size: clamp(1.8em, 3vw, 2.4em);
+            color: #1b1464;
             font-weight: 900;
-        }
-        .isBackground {
-            font-weight: 900;
-            color: rgba(255, 255, 255, .05);
-            position: absolute;
-            text-transform: uppercase;
-            z-index: -2;
+            font-size: clamp(30px, 5vw, 48px);
         }
     }
     .illustration {
@@ -69,21 +62,5 @@ footer {
         text-align: center;
         text-transform: uppercase;
         font-weight: 300;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .isBackground {
-        font-size: 5em;
-        margin-left: -140px;
-        margin-top: -90px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .isBackground {
-        font-size: 3em;
-        margin-left: -160px;
-        margin-top: -75px;
     }
 }
