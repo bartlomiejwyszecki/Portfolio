@@ -29,7 +29,7 @@
         .photo {
             border-radius: 50%;
             background: #212121;
-            background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('./../../../assets/photo.png');
+            background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('./../../../assets/photo.jpg');
             -webkit-background-size: cover;
             box-shadow: 3px 3px 9px -2px #616161;
             background-size: cover;
@@ -110,7 +110,7 @@
     border-radius: 0 15px 15px 0;
     font-size: 0.8em;
     cursor: pointer;
-    box-shadow: 0px 0px 10px -3px #757575;
+    box-shadow: 5px 0px 10px -7px #757575;
     .toggle {
         transform: rotate(-90deg);
         position: relative;
