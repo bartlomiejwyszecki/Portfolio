@@ -3,6 +3,8 @@ import { SwiperOptions } from 'swiper'
 
 import { projects, Project } from './data/data';
 
+import * as AOS from 'aos';
+
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -14,6 +16,9 @@ export class ProjectsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    //AOS
+    AOS.init();
+    //GET PROJECTS
     this.PROJECTS = projects;
   }
 

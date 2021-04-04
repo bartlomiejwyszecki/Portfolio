@@ -5,7 +5,8 @@
     min-height: 100vh;
     text-align: center;
     background-image: url('./../../../assets/contact.jpg');
-    background-size: cover;    
+    background-size: 100%;
+    background-repeat: repeat;    
     .container {
         color: #fafafa;
         .header {

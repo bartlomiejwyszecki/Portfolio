@@ -10,9 +10,9 @@ export class AnimationComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     setTimeout(() => {
       this.check = false;
-    }, 1);
+    }, 3500);
   }  
 }

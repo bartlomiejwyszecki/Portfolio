@@ -12,8 +12,8 @@ export const projects: Project[] = [
         title: 'Art gallery',
         description: 'Online art-gallery where user can watch art, choose items by category, sort them, rate them, and read details about them.',
         technologies: 'Typescript, Angular, SCSS, Bootstrap, Masonry-layout, Json-server, Express, REST, Lazy Modules',
-        live: 'https://bartlomiejwyszecki.github.io/CSS-Application',
-        github: 'https://art-gallery-angular.herokuapp.com/home'
+        live: 'https://art-gallery-angular.herokuapp.com/home',
+        github: 'https://github.com/bartlomiejwyszecki/Art-gallery'
     },
     {
         img: './../../../assets/weather.png',

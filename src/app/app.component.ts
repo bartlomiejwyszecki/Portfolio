@@ -1,5 +1,5 @@
+import { AotSummaryResolver } from '@angular/compiler';
 import { Component, ElementRef, HostListener, QueryList, ViewChildren } from '@angular/core';
-
 const areas = '1,2,3,4,5';
 
 @Component({
@@ -24,6 +24,9 @@ export class AppComponent {
       //console.log('Current ' + this.current + ', Active component: ' + activeComponent);
   }
 
+  ngOnInit() {
+  }
+
   isElementInViewPort(el: any) {
     let rect = el.getBoundingClientRect();
   
@@ -41,7 +44,6 @@ export class AppComponent {
     const y = element!.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
     window.scrollTo({top: y, behavior: 'smooth'});
-    console.log('Current link in appcomponent: ' + currentLink);
   }
 
   scrollTo(el: HTMLElement) {

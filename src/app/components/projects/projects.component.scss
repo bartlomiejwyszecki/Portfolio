@@ -3,7 +3,8 @@
     z-index: 0;
     padding: 200px 0 100px 0;
     background-image: url('./../../../assets/projects.png');
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: repeat;
     min-height: 100vh;
     text-align: center;
     color: #212121;
@@ -73,20 +74,20 @@
                 margin: 5px 15px 30px 0px;
                 padding: 8px 15px 8px 15px;
                 text-decoration: none;
-                border: 1px solid #212121;
-                color: #262626;
+                border: 1px solid #bb004f;
+                color: #bb004f;
                 font-weight: 600;
                 transition: 0.5s;
-                box-shadow: 4px 4px #212121;
+                box-shadow: 5px 5px #1b1464;
                 span {
                     padding-left: 5px;
                 }
             }
             a:hover {
                 color: #fafafa;
-                background: #212121;
+                background: #bb004f;
                 transition: 0.5s;
-                box-shadow: 4px 4px #f5f5f5;
+                box-shadow: 3px 3px #1b1464;
             }
             .icons {
                 display: flex;
@@ -123,18 +124,18 @@
             font-size: clamp(3em, 8vw, 4em);
             a {
                 text-decoration: none;
-                border: 1px solid #212121;
-                color: #212121;
+                border: 1px solid #bb004f;
+                color: #bb004f;
                 font-weight: 600;
                 transition: 0.5s;
-                box-shadow: 7px 7px #212121;
+                box-shadow: 10px 10px #1b1464;
                 padding: 30px;
             }
             a:hover {
                 color: #fafafa;
-                background: #212121;
+                background: #bb004f;
                 transition: 0.5s;
-                box-shadow: 7px 7px #f5f5f5;
+                box-shadow: 5px 5px #1b1464;
             }
         }
     }

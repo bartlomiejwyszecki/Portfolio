@@ -35,7 +35,6 @@ export class NavbarComponent {
 
   isCurrent(name: string) {
     if (this.components[Number(this.current)-1] === name ) {
-      console.log('Current in navbar: ' + this.current);
       return true;
     } else {
       return false;
@@ -44,6 +43,5 @@ export class NavbarComponent {
 
   goToLink(value: string) {
     this.clickedLink.emit(value);
-    console.log(value);
   }
 }
