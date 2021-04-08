@@ -45,5 +45,4 @@ export class IntroductionComponent implements OnInit {
     };
     type();
   }
-
 }

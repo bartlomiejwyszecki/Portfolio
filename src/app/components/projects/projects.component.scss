@@ -3,8 +3,7 @@
     z-index: 0;
     padding: 200px 0 100px 0;
     background-image: url('./../../../assets/projects.png');
-    background-size: 100%;
-    background-repeat: repeat;
+    background-size: cover;
     min-height: 100vh;
     text-align: center;
     color: #212121;
@@ -46,15 +45,15 @@
             max-width: 90vw;
             height: auto;
             min-height: 60vh;
-            max-height: 85vh;
             text-align: left;
-            box-shadow: 3px 3px 15px -2px #212121;
             font-size: 0.85em;
+            cursor: grabbing;
           }
     }
     .card {
         position: relative;
         background: #fafafa;
+        box-shadow: 3px 3px 15px -2px #212121;
         width: 100%;
         height: 100%;
         margin: 0 auto;

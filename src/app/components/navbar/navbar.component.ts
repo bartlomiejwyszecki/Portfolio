@@ -18,9 +18,13 @@ export class NavbarComponent {
 
   components: string[] = ['Home', 'About me', 'My skills', 'My projects', 'Contact'];
 
-  check!: boolean;
+  // check!: boolean; FOR STICKY
+  
   hamburger: boolean = true;
   links: boolean = false;
+
+  scroll = 0;
+  hideNav = false;
 
   constructor(
     @Inject (DOCUMENT) private document: Document
@@ -28,10 +32,19 @@ export class NavbarComponent {
 
   @HostListener("document:scroll", [])
   onScroll() {
-    const offset = this.document.documentElement.scrollTop ||
-      this.document.body.scrollTop || 0;
-    offset > 100 ? this.check = true : this.check = false;
+    // FOR STICKY
+    // const offset = this.document.documentElement.scrollTop ||
+    //   this.document.body.scrollTop || 0;
+    // offset > 100 ? this.check = true : this.check = false;
+
+    this.hideNav = this.scroll > this.document.documentElement.scrollTop;
+    this.scroll = this.document.documentElement.scrollTop;
   }
+
+  // onScroll(event) {
+  //   this.hideNav = this.scrollTop < event.target.scrollTop;
+  //   this.scrollTop = event.target.scrollTop;
+  // }
 
   isCurrent(name: string) {
     if (this.components[Number(this.current)-1] === name ) {

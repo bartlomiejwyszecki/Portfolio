@@ -11,6 +11,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { AnimationComponent } from './components/animation/animation.component';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
 import { IntroductionComponent } from './components/introduction/introduction.component';
 
 @NgModule({
@@ -29,7 +30,8 @@ import { IntroductionComponent } from './components/introduction/introduction.co
   imports: [
     BrowserModule,
     NgbModule,
-    NgxUsefulSwiperModule
+    NgxUsefulSwiperModule,
+    NgxHideOnScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

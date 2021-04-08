@@ -7,6 +7,7 @@ import * as AOS from 'aos';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
+  mail: string = 'bartlomiej.wyszecki2@gmail.com';
 
   constructor() { }
 

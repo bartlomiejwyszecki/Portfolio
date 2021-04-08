@@ -32,16 +32,16 @@ export class ProjectsComponent implements OnInit {
       prevEl: '.swiper-button-prev'
     },
     spaceBetween: 30,
-    speed: 800,
+    speed: 600,
     loop: false,
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: 'auto',
     coverflowEffect: {
-      rotate: 40,
-      stretch: 0,
-      depth: 90,
+      rotate: 0,
+      stretch: 350,
+      depth: 250,
       modifier: 1,
       slideShadows: true
     }

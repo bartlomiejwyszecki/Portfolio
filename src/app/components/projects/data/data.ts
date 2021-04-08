@@ -18,7 +18,7 @@ export const projects: Project[] = [
     {
         img: './../../../assets/weather.png',
         title: 'Weather application',
-        description: 'Weather application that is showing a few weather parameters dependent on provided location.Weather application that is showing a few weather parameters dependent on provided location.',
+        description: 'Weather application that is showing a few weather parameters dependent on provided location.',
         technologies: 'Javascript, Node.js, Express, Handlebars, Weather API',
         live: 'https://app-weather-bwyszecki.herokuapp.com/',
         github: 'https://github.com/bartlomiejwyszecki/weather-app'
@@ -27,7 +27,7 @@ export const projects: Project[] = [
         img: './../../../assets/quotations.jpg',
         title: 'Best quotes',
         description: 'Simple angular application where user can browse and rate quotes.',
-        technologies: 'Typescript, Angular',
+        technologies: 'Typescript, Angular, Materialize CSS',
         github: 'https://github.com/bartlomiejwyszecki/Quotations_app'
     },
     {

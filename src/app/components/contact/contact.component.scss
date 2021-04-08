@@ -3,14 +3,13 @@
     z-index: 0;
     padding: 0px 0 -50px 0;
     min-height: 100vh;
-    text-align: center;
+    text-align: left;
     background-image: url('./../../../assets/contact.jpg');
-    background-size: 100%;
-    background-repeat: repeat;    
+    background-size: cover;    
     .container {
-        color: #fafafa;
+        color: #212121;
         .header {
-            text-align: center;
+            text-align: left;
             h1 {
                 padding-top: 200px;
                 color: #1b1464;
@@ -22,7 +21,6 @@
             position: relative;
             z-index: -1;
             text-align: right;
-            margin-top: 100px;
             top: 130px;
             svg {
                 width: 270px;
@@ -31,31 +29,59 @@
         }
         .content {
             margin-top: 30px;
-            form {
-                margin-top: 50px;
-                margin-bottom: 100px;
-                font-family: muli, sans-serif;
-                width: 100%;
-                z-index: 0;
-                position: relative;
-                .btn {
-                    margin-top: 15px;
-                    background: rgba(255, 255, 255, .2);
-                    border: 1px solid rgba(187, 0, 79, .5);
+            font-size: 1.1em;
+            ul {
+                width: auto;
+                li {
+                    list-style: none;
+                    text-align: left;
+                    width: auto;
+                    padding-left: 0;
+                    margin-left: 0;
+                    padding: 15px 0 15px 0;
+                    line-height: 40px;
+                    a {
+                        text-decoration: none;
+                        color: #212121;
+                    }
+                    span {
+                        color: rgba(187, 0, 79);
+                        text-shadow: 2px 2px rgba(27, 20, 100, .25);
+                        padding-right: 10px;
+                    }
+                }
+                .borderBottom::before {
+                    content: "";
+                    width: 20px;
+                    height: 5px;
+                    position: absolute;
+                    margin-top: 32px;
+                    margin-left: 8px;
+                    background: #bb004f;
+                    border-radius: 15px;
+                    transition: 1s;
+                }
+                li:hover {
+                    cursor: pointer;
                     color: #bb004f;
-                    font-weight: 500;
+                    transition: 1s;
+                    a { color: #bb004f; }
+                    .borderBottom::before {
+                        width: 150px;
+                        transition: 1s;
+                    }
                 }
-                .btn:hover, .btn:active, .btn:focus {
-                    background: rgba(27, 20, 100, .15);
-                    border: 1px solid rgba(187, 0, 79, .1);
-                    font-weight: 800;
-                }
-                textarea {
-                    height: 180px;
-                }
-                .input-group, button {
-                    box-shadow: 2px 2px 10px -4px #757575;
-                }
+            }
+            button {
+                border-radius: 15px;
+                background:rgba(27, 20, 100, .1);
+                border: rgba(27, 20, 100, .3);
+            }
+            button:hover {
+                background: #bb004f;
+                background-position: 200% 200%;
+                color: #fafafa;
+                transition: 1s;
             }
         }
     }
@@ -67,7 +93,7 @@ footer {
     bottom: 100px;
     position: relative;
     bottom: 0;
-    z-index: -2;
+    z-index: -1;
     h1 {
         font-size: 15px;
         line-height: 18px;

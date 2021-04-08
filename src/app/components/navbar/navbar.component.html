@@ -1,16 +1,20 @@
-<nav class="navbar navbar-expand-lg" [ngClass]="{'scrolled': check}">
-  <div class="container-fluid">
-    <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
-      <ul class="navbar-nav" [ngClass]="{'turned': hamburger}">
-        <li class="nav-item" *ngFor="let c of components">
-          <a class="nav-link" aria-current="page" (click)="goToLink(c)" [ngClass]="{'active': isCurrent(c)}">{{ c }}</a>
-        </li>
-      </ul>
+<ng-container [ngClass]="{'hide': !hideNav}">
+  <nav class="navbar navbar-expand-lg" [ngClass]="{'show': hideNav}">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+        <ul class="navbar-nav" [ngClass]="{'turned': hamburger}">
+            <li class="nav-item" *ngFor="let c of components">
+              <div class="navLine" [ngClass]="{'active': isCurrent(c)}">
+                <a class="nav-link" aria-current="page" (click)="goToLink(c)">{{ c }}</a>
+              </div>
+            </li>
+        </ul>
+      </div>
+      <div class="hamburger" style="cursor: pointer;" (click)="hamburger = !hamburger" [ngClass]="{'ex': !hamburger}">
+        <div class="line" id="one"></div>
+        <div class="line" id="two"></div>
+        <div class="line" id="three"></div>
+      </div>
     </div>
-    <div class="hamburger" style="cursor: pointer;" (click)="hamburger = !hamburger" [ngClass]="{'ex': !hamburger}">
-      <div class="line" id="one"></div>
-      <div class="line" id="two"></div>
-      <div class="line" id="three"></div>
-    </div>
-  </div>
-</nav>
+  </nav>
+</ng-container>
